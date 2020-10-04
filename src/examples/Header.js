@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 const getData = graphql`
   {
     site {
-      siteMetadata {
+      info: siteMetadata {
         person {
           name
           age
@@ -25,7 +25,7 @@ const Header = () => {
   //es6 destructoring!!!
   const {
     site: {
-      siteMetadata: {
+      info: {
         person: { name, age },
       },
     },
@@ -34,8 +34,8 @@ const Header = () => {
   //console.log(data)
   return (
     <div>
-      <h2>name : {data.site.siteMetadata.person.name}</h2>
-      <h2>age : {data.site.siteMetadata.person.age}</h2>
+      <h2>name : {data.site.info.person.name}</h2>
+      <h2>age : {data.site.info.person.age}</h2>
 
       <h2>name : {name}</h2>
       <h2>age : {age}</h2>
