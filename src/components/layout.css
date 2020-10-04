@@ -1,11 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400;500&display=swap");
 
 body {
-    font-family: 'Sansita Swashed',
-        cursive;
-
+  font-family: "Sansita Swashed", cursive;
 }
 
 h1 {
-    color: blue;
+  color: blue;
+}
+h2 {
+  color: black;
+}
+h3 {
+  color: blue;
 }
