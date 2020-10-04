@@ -1,10 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
+import Navbar from "../components/Navbar"
 
 export default function Home() {
   return (
     <div>
-      Hello people!d
+      <Navbar />
+      Hello pedople! navbar component above!!
       <div>
         <Link to="/blog/">internal blog page</Link>
         <br />
