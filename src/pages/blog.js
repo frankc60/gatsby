@@ -6,7 +6,7 @@ const blog = () => {
   return (
     <Layout>
       <div className={styles.page}>
-        <h1>this is my blog page</h1>
+        <h2>this is my blog page</h2>
         <p className={styles.text}>
           lorem ipsum, blad blahadfsf fsf sdaf sadf saf sdf asfsadf.
         </p>
