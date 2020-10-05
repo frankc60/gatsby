@@ -14,6 +14,16 @@ module.exports = {
     data: ["item1", "item2"],
     person: { name: "pete", age: 43 },
   },
-  plugins: [`gatsby-plugin-styled-components`],
+  plugins: [
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+      },
+    },
+  ],
+
   mapping: {},
 }
