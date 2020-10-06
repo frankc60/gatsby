@@ -4,6 +4,10 @@
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
 
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   /* Your site config here */
   // https://www.gatsbyjs.com/docs/gatsby-config/#reach-skip-nav
@@ -31,7 +35,7 @@ module.exports = {
       options: {
         spaceId: `fuyjo2a379i1`,
         // Learn about environment variables: https://gatsby.dev/env-vars
-        accessToken: `xxxxx`,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
   ],
