@@ -7,9 +7,31 @@ body {
 h1 {
   color: blue;
 }
+
 h2 {
   color: black;
 }
+
 h3 {
   color: blue;
+}
+
+.images {
+  text-align: center;
+  text-transform: capitalize;
+  width: 80vw;
+  margin: 0 auto 10rem auto;
+}
+
+.single-image {
+  border: 3px solid green;
+  padding: 0.5rem 0;
+}
+
+@media screen and (min-width:992px) {
+  .images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+  }
 }
