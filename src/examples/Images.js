@@ -19,6 +19,25 @@ const getImages = graphql`
         }
       }
     }
+    fluid2: file(relativePath: { eq: "image-4.jpeg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    fluid3: file(relativePath: { eq: "image-5.webp" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+        original {
+          width
+          height
+        }
+      }
+      size
+    }
   }
 `
 //
@@ -39,6 +58,18 @@ const Images = () => {
       <article className="single-image">
         <h4>fluid SVG image</h4>
         <Image fluid={data.fluid.childImageSharp.fluid} />
+      </article>
+      <article className="single-image">
+        <h4>fluid 2 image</h4>
+        <Image fluid={data.fluid2.childImageSharp.fluid} />
+      </article>
+      <article className="single-image">
+        <h4>fluid 3 webp image</h4>
+        <Image fluid={data.fluid3.childImageSharp.fluid} />
+        <p>Dims:{data.fluid3.childImageSharp.fluid.sizes}</p>
+        <p>Size: {data.fluid3.size}</p>
+        <p>Orig Width: {data.fluid3.childImageSharp.original.width}</p>
+        <p>Orig Height: {data.fluid3.childImageSharp.original.height}</p>
       </article>
       hellon from Images
     </section>
