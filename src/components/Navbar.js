@@ -34,6 +34,11 @@ const Navbar = () => {
           <Link to="/images/">Images</Link>
         </li>
       </ul>
+      <ul>
+        <li>
+          <Link to="/mainproducts/">Main Products</Link>
+        </li>
+      </ul>
     </nav>
   )
 }
