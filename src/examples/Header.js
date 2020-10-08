@@ -10,10 +10,6 @@ const getData = graphql`
           name
           age
         }
-        title
-        description
-        author
-        data
       }
     }
   }

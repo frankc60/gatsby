@@ -21,7 +21,7 @@ export default ({ data }) => {
         <h1>Product Template</h1>
 
         <article className="single-product">
-          <Img fixed={data.product.image.fixed} alt={title} />
+          <Img fixed={fixed} alt={title} />
           <article>
             {" "}
             <h3>
