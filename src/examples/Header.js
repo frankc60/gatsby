@@ -7,8 +7,8 @@ const getData = graphql`
     site {
       info: siteMetadata {
         person {
-          name
           age
+          name
         }
       }
     }
