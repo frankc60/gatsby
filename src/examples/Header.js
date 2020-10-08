@@ -29,7 +29,7 @@ const Header = () => {
         person: { name, age },
       },
     },
-  } = useStaticQuery(getData)
+  } = data
 
   //console.log(data)
   return (
