@@ -28,10 +28,31 @@ h3 {
   padding: 0.5rem 0;
 }
 
+.single-product {
+  margin: 1rem auto;
+  border: 1px solid black;
+  padding: 1rem;
+
+}
+
+#single-product-cost {
+  background: yellow;
+  color: red;
+  font-size: 1.5rem;
+}
+
 @media screen and (min-width:992px) {
   .images {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 1rem;
   }
+
+  .single-product {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 1rem;
+  }
+
+
 }

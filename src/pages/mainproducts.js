@@ -21,9 +21,10 @@ const ComponentName = ({ data }) => {
               <h3>
                 Title: {item.title} <span>£{item.price}</span>
               </h3>
-              <Image fluid={item.image.fluid} alt={products.title} />
-
-              <Link to={`/products/${item.slug}`}>More Info...</Link>
+              <Link to={`/products/${item.slug}`}>
+                <Image fluid={item.image.fluid} alt={products.title} />
+                More Info...
+              </Link>
             </article>
           )
         })}
