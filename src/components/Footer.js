@@ -3,29 +3,31 @@ import { Link } from "gatsby"
 
 const Footer = () => {
   return (
-    <div>
+    <section>
       ----------------------------------------------------
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <Link to="/blog/">Blog</Link>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <Link to="/products/">Products</Link>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a href="https://www.google.com">Google</a>
-        </li>
-      </ul>
-    </div>
+      <div className="navBottom">
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <Link to="/blog/">Blog</Link>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <Link to="/products/">Products</Link>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="https://www.google.com">Google</a>
+          </li>
+        </ul>
+      </div>
+    </section>
   )
 }
 export default Footer
