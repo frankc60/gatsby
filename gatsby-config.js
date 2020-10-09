@@ -12,8 +12,8 @@ module.exports = {
   /* Your site config here */
   // https://www.gatsbyjs.com/docs/gatsby-config/#reach-skip-nav
   siteMetadata: {
-    title: "Gatsby Tutorial",
-    description: "random dies",
+    title: "Frank's Sofas",
+    description: "random sofas for sale",
     author: "frankc60",
     data: ["item1", "item2"],
     person: { name: "pete", age: 43 },
@@ -21,6 +21,7 @@ module.exports = {
   plugins: [
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

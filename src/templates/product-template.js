@@ -7,9 +7,9 @@ export default ({ data }) => {
   const {
     product: {
       info: { info },
-      title: title,
+      title,
       price: cost,
-      image: { fixed: fixed },
+      image: { fixed },
     },
   } = data
   return (
