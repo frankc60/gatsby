@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
+import SEO from "../components/seo"
 
 export default ({ data }) => {
   const {
@@ -14,6 +15,7 @@ export default ({ data }) => {
   } = data
   return (
     <Layout>
+      <SEO title={title} description={info} />
       <section style={{ textAlign: "center" }}>
         <p>
           <Link to="/mainproducts/">Main Products..</Link>
