@@ -26,8 +26,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `GatsbyJS`,
-        short_name: `GatsbyJS`,
+        name: `Frank's Sofas`,
+        short_name: `FrankSofa`,
         start_url: `/`,
         background_color: `#6b37bf`,
         theme_color: `#6b37bf`,
